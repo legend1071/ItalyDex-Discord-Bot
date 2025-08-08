@@ -1,0 +1,1441 @@
+[2025-08-03 07:55:50] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-03 07:55:50] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-03 07:55:50] INFO discord.client: logging in using static token
+[2025-08-03 07:55:51] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-03 07:55:54] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 5ec5cff46774c1ea0be253ab547dcc91).
+[2025-08-03 07:55:56] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-03 07:55:56] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-03 07:55:56] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-03 07:55:56] INFO ballsdex.core.bot: Loading packages...
+[2025-08-03 07:55:56] INFO ballsdex.packages.countryballs: Loaded 0 guilds in cache.
+[2025-08-03 07:55:56] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-03 07:55:59] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-03 08:02:10] INFO ballsdex: Received SIGTERM, stopping the bot...
+[2025-08-03 08:04:57] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-03 08:04:57] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-03 08:04:57] INFO discord.client: logging in using static token
+[2025-08-03 08:04:58] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-03 08:04:59] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 75b853f6635881765c87b90f8cf2223f).
+[2025-08-03 08:05:02] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-03 08:05:02] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-03 08:05:02] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-03 08:05:02] INFO ballsdex.core.bot: Loading packages...
+[2025-08-03 08:05:02] INFO ballsdex.packages.countryballs: Loaded 0 guilds in cache.
+[2025-08-03 08:05:02] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-03 08:05:05] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-03 08:05:07] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
+[2025-08-03 09:31:22] INFO discord.gateway: Shard ID 0 has successfully RESUMED session 75b853f6635881765c87b90f8cf2223f.
+[2025-08-03 09:33:29] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-03 09:51:47] INFO ballsdex: Received SIGTERM, stopping the bot...
+[2025-08-03 09:52:12] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-03 09:52:12] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-03 09:52:12] INFO discord.client: logging in using static token
+[2025-08-03 09:52:13] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-03 09:52:14] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 7f66f329c8d81f3537f4e7893761dd01).
+[2025-08-03 09:52:16] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-03 09:52:16] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-03 09:52:17] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-03 09:52:17] INFO ballsdex.core.bot: Loading packages...
+[2025-08-03 09:52:17] INFO ballsdex.packages.countryballs: Loaded 0 guilds in cache.
+[2025-08-03 09:52:17] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-03 09:52:19] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-03 09:52:21] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
+[2025-08-03 09:52:28] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 09:54:31] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 10:11:45] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 10:12:50] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 10:18:43] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 10:19:30] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 11:28:26] INFO discord.gateway: Shard ID 0 session has been invalidated.
+[2025-08-03 11:28:33] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 84633f31e9463e7e1581087e6a17275a).
+[2025-08-03 11:47:48] INFO ballsdex: Received SIGTERM, stopping the bot...
+[2025-08-03 11:48:15] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-03 11:48:15] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-03 11:48:15] INFO discord.client: logging in using static token
+[2025-08-03 11:48:17] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-03 11:48:18] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 0b1f5be3ec0065390a26c39117156b74).
+[2025-08-03 11:48:20] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-03 11:48:20] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-03 11:48:21] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-03 11:48:21] INFO ballsdex.core.bot: Loading packages...
+[2025-08-03 11:48:21] INFO ballsdex.packages.countryballs: Loaded 0 guilds in cache.
+[2025-08-03 11:48:22] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-03 11:48:24] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-03 11:48:26] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
+[2025-08-03 11:48:38] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 11:50:36] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 12:42:34] INFO discord.gateway: Shard ID 0 has successfully RESUMED session 0b1f5be3ec0065390a26c39117156b74.
+[2025-08-03 13:07:50] INFO ballsdex: Received SIGTERM, stopping the bot...
+[2025-08-03 13:08:22] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-03 13:08:22] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-03 13:08:22] INFO discord.client: logging in using static token
+[2025-08-03 13:08:23] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-03 13:08:24] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: c5acc1ca49c2903e168d046088d4f9b5).
+[2025-08-03 13:08:26] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-03 13:08:26] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-03 13:08:27] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-03 13:08:27] INFO ballsdex.core.bot: Loading packages...
+[2025-08-03 13:08:27] INFO ballsdex.packages.countryballs: Loaded 0 guilds in cache.
+[2025-08-03 13:08:27] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-03 13:08:30] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-03 13:08:32] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
+[2025-08-03 13:17:55] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 13:19:41] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 13:21:39] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 13:28:52] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 13:54:12] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 13:55:15] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 13:55:16] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 13:58:50] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 13:59:43] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 14:02:39] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 14:04:26] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 14:15:41] INFO ballsdex: Received SIGTERM, stopping the bot...
+[2025-08-03 14:16:24] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-03 14:16:24] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-03 14:16:24] INFO discord.client: logging in using static token
+[2025-08-03 14:16:25] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-03 14:16:27] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: dff023674bae8230cf0eb0e16404cc10).
+[2025-08-03 14:16:29] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-03 14:16:29] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-03 14:16:29] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-03 14:16:29] INFO ballsdex.core.bot: Loading packages...
+[2025-08-03 14:16:30] INFO ballsdex.packages.countryballs: Loaded 1 guild in cache.
+[2025-08-03 14:16:30] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-03 14:16:32] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-03 14:16:34] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
+[2025-08-03 14:23:36] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 15:05:49] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 15:07:45] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 15:08:25] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 15:08:32] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 15:20:26] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-03 15:26:00] INFO ballsdex: Received SIGTERM, stopping the bot...
+[2025-08-04 10:49:42] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-04 10:49:42] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-04 10:49:42] INFO discord.client: logging in using static token
+[2025-08-04 10:49:44] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-04 10:49:45] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 439f534055f84ed5a74467cd6e3fdfe8).
+[2025-08-04 10:49:48] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-04 10:49:48] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-04 10:49:48] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-04 10:49:48] INFO ballsdex.core.bot: Loading packages...
+[2025-08-04 10:49:49] INFO ballsdex.packages.countryballs: Loaded 4 guilds in cache.
+[2025-08-04 10:49:49] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-04 10:49:51] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-04 10:49:53] INFO ballsdex.core.bot: Synced 1 admin command for guild 1401874467021389874.
+[2025-08-04 11:05:38] ERROR ballsdex.core.bot: Application command 'admin' not found
+[2025-08-04 11:05:39] ERROR ballsdex.core.bot: Unknown error in interaction
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1151, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1283, in _call
+    command, options = self._get_app_command_options(data)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1187, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command 'admin' not found
+[2025-08-04 11:06:24] INFO discord.gateway: Shard ID 0 has successfully RESUMED session 439f534055f84ed5a74467cd6e3fdfe8.
+[2025-08-04 11:23:46] INFO discord.gateway: Shard ID 0 has successfully RESUMED session 439f534055f84ed5a74467cd6e3fdfe8.
+[2025-08-04 11:30:03] ERROR ballsdex.core.bot: Application command 'admin' not found
+[2025-08-04 11:30:04] ERROR ballsdex.core.bot: Unknown error in interaction
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1151, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1283, in _call
+    command, options = self._get_app_command_options(data)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1187, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command 'admin' not found
+[2025-08-04 12:35:30] INFO discord.gateway: Shard ID 0 session has been invalidated.
+[2025-08-04 12:35:37] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 9f3f48b5de7679e42903515e53069162).
+[2025-08-04 12:36:24] ERROR ballsdex.packages.countryballs: Missing permission to spawn ball in channel italy-dex.
+[2025-08-04 13:28:11] INFO discord.gateway: Shard ID 0 session has been invalidated.
+[2025-08-04 13:28:17] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 239acd42036022631a156f872df857e7).
+[2025-08-04 14:51:30] ERROR ballsdex.packages.countryballs: Missing permission to spawn ball in channel italy-dex.
+[2025-08-04 14:56:05] ERROR ballsdex.core.bot: Application command 'admin' not found
+[2025-08-04 14:56:05] ERROR ballsdex.core.bot: Unknown error in interaction
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1151, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1283, in _call
+    command, options = self._get_app_command_options(data)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1187, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command 'admin' not found
+[2025-08-04 15:11:46] ERROR ballsdex.core.bot: Application command 'admin' not found
+[2025-08-04 15:11:46] ERROR ballsdex.core.bot: Unknown error in interaction
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1151, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1283, in _call
+    command, options = self._get_app_command_options(data)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1187, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command 'admin' not found
+[2025-08-04 15:42:28] INFO ballsdex: Received SIGTERM, stopping the bot...
+[2025-08-04 15:42:56] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-04 15:42:56] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-04 15:42:56] INFO discord.client: logging in using static token
+[2025-08-04 15:42:57] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-04 15:42:59] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 3e454af5f1491146510c092911e8370b).
+[2025-08-04 15:43:01] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-04 15:43:01] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-04 15:43:01] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-04 15:43:01] INFO ballsdex.core.bot: Loading packages...
+[2025-08-04 15:43:02] INFO ballsdex.packages.countryballs: Loaded 4 guilds in cache.
+[2025-08-04 15:43:02] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-04 15:43:04] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-04 15:43:06] INFO ballsdex.core.bot: Synced 1 admin command for guild 1401874467021389874.
+[2025-08-04 15:43:08] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
+[2025-08-04 15:43:38] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 15:45:05] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 15:45:44] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 15:54:17] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 15:55:35] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 15:55:48] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 15:56:05] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 15:56:08] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 15:56:11] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:04:24] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:04:49] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:05:46] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:07:07] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:09:56] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:10:26] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:10:30] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:10:52] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:10:56] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:11:38] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:11:43] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:14:14] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:14:49] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:17:33] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:18:45] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:20:16] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:20:52] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 178, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-04 16:22:27] INFO ballsdex: Received SIGTERM, stopping the bot...
+[2025-08-05 10:44:17] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-05 10:44:17] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-05 10:44:17] INFO discord.client: logging in using static token
+[2025-08-05 10:44:18] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-05 10:44:19] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 76239f2ee13788ca6278ccc96d9e9e09).
+[2025-08-05 10:44:22] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-05 10:44:22] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-05 10:44:22] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-05 10:44:22] INFO ballsdex.core.bot: Loading packages...
+[2025-08-05 10:44:23] INFO ballsdex.packages.countryballs: Loaded 4 guilds in cache.
+[2025-08-05 10:44:23] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-05 10:44:26] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-05 10:44:28] INFO ballsdex.core.bot: Synced 1 admin command for guild 1401874467021389874.
+[2025-08-05 10:44:29] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
+[2025-08-05 11:50:32] INFO discord.gateway: Shard ID 0 has successfully RESUMED session 76239f2ee13788ca6278ccc96d9e9e09.
+[2025-08-05 12:10:39] ERROR ballsdex.packages.countryballs: Missing permission to spawn ball in channel italy-dex.
+[2025-08-05 12:15:32] INFO discord.gateway: Shard ID 0 has successfully RESUMED session 76239f2ee13788ca6278ccc96d9e9e09.
+[2025-08-05 14:14:09] ERROR ballsdex.packages.countryballs: Missing permission to spawn ball in channel italy-dex.
+[2025-08-05 14:24:28] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-05 14:41:38] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-05 14:52:54] INFO discord.gateway: Shard ID 0 has successfully RESUMED session 76239f2ee13788ca6278ccc96d9e9e09.
+[2025-08-05 15:09:01] INFO discord.gateway: Shard ID 0 has successfully RESUMED session 76239f2ee13788ca6278ccc96d9e9e09.
+[2025-08-05 15:35:55] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-05 15:50:59] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-06 11:09:04] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-06 11:09:04] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-06 11:09:04] INFO discord.client: logging in using static token
+[2025-08-06 11:09:06] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-06 11:09:07] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 322f642cce21225f960c44b5fa74bed0).
+[2025-08-06 11:09:10] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-06 11:09:10] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-06 11:09:10] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-06 11:09:10] INFO ballsdex.core.bot: Loading packages...
+[2025-08-06 11:09:11] INFO ballsdex.packages.countryballs: Loaded 4 guilds in cache.
+[2025-08-06 11:09:11] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-06 11:09:13] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-06 11:09:15] INFO ballsdex.core.bot: Synced 1 admin command for guild 1401874467021389874.
+[2025-08-06 11:09:17] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
+[2025-08-06 11:09:27] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-06 11:22:13] ERROR ballsdex.core.bot: Error in slash command admin italyballs spawn
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/admin/balls.py", line 201, in spawn
+    await log_action(
+    ...<4 lines>...
+    )
+  File "/code/ballsdex/core/utils/logging.py", line 13, in log_action
+    channel = bot.get_channel(settings.log_channel)
+  File "/usr/local/lib/python3.13/site-packages/discord/client.py", line 1003, in get_channel
+    return self._connection.get_channel(id)  # type: ignore # The cache contains all channel types
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 1820, in get_channel
+    pm = self._get_private_channel(id)
+  File "/usr/local/lib/python3.13/site-packages/discord/state.py", line 489, in _get_private_channel
+    value = self._private_channels[channel_id]  # type: ignore
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+[2025-08-06 12:07:29] INFO discord.gateway: Shard ID 0 has successfully RESUMED session 322f642cce21225f960c44b5fa74bed0.
+[2025-08-06 13:41:36] ERROR ballsdex.packages.countryballs: Missing permission to spawn ball in channel italydex.
+[2025-08-07 11:11:45] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-07 11:11:45] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-07 11:11:45] INFO discord.client: logging in using static token
+[2025-08-07 11:11:46] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-07 11:11:47] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 3b9565b358e9e87d300fafbca0de05e1).
+[2025-08-07 11:11:50] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-07 11:11:50] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-07 11:11:50] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-07 11:11:50] INFO ballsdex.core.bot: Loading packages...
+[2025-08-07 11:11:51] INFO ballsdex.packages.countryballs: Loaded 4 guilds in cache.
+[2025-08-07 11:11:51] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-07 11:11:53] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-07 11:11:56] INFO ballsdex.core.bot: Synced 1 admin command for guild 1401874467021389874.
+[2025-08-07 11:11:58] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
+[2025-08-07 13:33:17] INFO discord.gateway: Shard ID 0 session has been invalidated.
+[2025-08-07 13:33:23] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: f71c2dc2fa0e777a8364de06d2da8202).
+[2025-08-07 14:30:07] ERROR ballsdex.core.bot: Error in slash command about
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/info/cog.py", line 147, in about
+    await interaction.response.send_message(embed=embed, view=LicenseInfo())
+  File "/usr/local/lib/python3.13/site-packages/discord/interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2025-08-07 14:30:07] CRITICAL ballsdex: Caught unhandled exception in <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at /usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py:1149> exception=NotFound('404 Not Found (error code: 10062): Unknown interaction')>:
+Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/code/ballsdex/packages/info/cog.py", line 147, in about
+    await interaction.response.send_message(embed=embed, view=LicenseInfo())
+  File "/usr/local/lib/python3.13/site-packages/discord/interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'about' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1151, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.13/site-packages/discord/app_commands/tree.py", line 1314, in _call
+    await self.on_error(interaction, e)
+  File "/code/ballsdex/core/bot.py", line 514, in on_application_command_error
+    await send(
+        "An error occured when running the command. Contact support if this persists."
+    )
+  File "/code/ballsdex/core/bot.py", line 455, in send
+    await interaction.response.send_message(content, ephemeral=True)
+  File "/usr/local/lib/python3.13/site-packages/discord/interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2025-08-07 15:46:43] INFO discord.gateway: Shard ID 0 has successfully RESUMED session f71c2dc2fa0e777a8364de06d2da8202.
+[2025-08-07 16:42:44] INFO ballsdex: Received SIGTERM, stopping the bot...
+[2025-08-08 06:45:24] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-08 06:45:24] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-08 06:45:24] INFO discord.client: logging in using static token
+[2025-08-08 06:45:25] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-08 06:45:26] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 3ea9d3430862ccb7c0b137906fefb099).
+[2025-08-08 06:45:29] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-08 06:45:29] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-08 06:45:29] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-08 06:45:29] INFO ballsdex.core.bot: Loading packages...
+[2025-08-08 06:45:30] INFO ballsdex.packages.countryballs: Loaded 4 guilds in cache.
+[2025-08-08 06:45:31] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-08 06:45:33] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-08 06:45:35] INFO ballsdex.core.bot: Synced 1 admin command for guild 1401874467021389874.
+[2025-08-08 06:45:37] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
+[2025-08-08 06:59:56] INFO ballsdex: Received SIGTERM, stopping the bot...
+[2025-08-08 07:01:25] INFO ballsdex: Tortoise ORM and database ready.
+[2025-08-08 07:01:25] INFO ballsdex: Initialized bot, connecting to Discord...
+[2025-08-08 07:01:25] INFO discord.client: logging in using static token
+[2025-08-08 07:01:26] INFO ballsdex.core.bot: Starting up with None shards...
+[2025-08-08 07:01:28] INFO discord.gateway: Shard ID 0 has connected to Gateway (Session ID: 1ad2a8798b86bc1e874ca57dcab24115).
+[2025-08-08 07:01:30] INFO ballsdex.core.bot: Successfully logged in as ItalyDex#8235 (1401464045340594258)!
+[2025-08-08 07:01:30] INFO ballsdex.core.bot: 3 users are set as bot owner.
+[2025-08-08 07:01:30] INFO ballsdex.core.bot: Cache loaded, summary displayed below:
+[2025-08-08 07:01:30] INFO ballsdex.core.bot: Loading packages...
+[2025-08-08 07:01:32] INFO ballsdex.packages.countryballs: Loaded 4 guilds in cache.
+[2025-08-08 07:01:32] INFO ballsdex.core.bot: Packages loaded: admin, balls, config, countryballs, info, players, trade
+[2025-08-08 07:01:34] INFO ballsdex.core.bot: Synced 6 commands.
+[2025-08-08 07:01:37] INFO ballsdex.core.bot: Synced 1 admin command for guild 1401874467021389874.
+[2025-08-08 07:01:39] INFO ballsdex.core.bot: Synced 1 admin command for guild 1185938744000401408.
